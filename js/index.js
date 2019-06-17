@@ -41,6 +41,34 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+const ctaImage = document.getElementById('cta-img');
+ctaImage.src = siteContent['cta']['img-src'];
+
+const middleImg = document.getElementById("middle-img");
+middleImg.src = siteContent['main-content']['middle-img-src'];
+
+const header1 =document.querySelector('h1');
+header1.textContent = siteContent['cta']['h1']
+
+const getStarted = document.querySelector('button');
+getStarted.textContent = siteContent['cta']['button'];
+
+let pContent = document.querySelectorAll('p');
+pContent[0].textContent = siteContent['main-content']['features-content']
+pContent[1].textContent = siteContent['main-content']['about-content']
+pContent[2].textContent = siteContent['main-content']['services-content']
+pContent[3].textContent = siteContent['main-content']['product-content']
+pContent[4].textContent = siteContent['main-content']['vision-content']
+
+
+let headers = document.querySelectorAll('h4');
+headers[0].textContent = siteContent['main-content']['features-h4'];
+headers[1].textContent = siteContent['main-content']['about-h4'];
+headers[2].textContent = siteContent['main-content']['services-h4'];
+headers[3].textContent = siteContent['main-content']['product-h4'];
+headers[4].textContent = siteContent['main-content']['vision-h4']
+
+
 let links = document.querySelectorAll('a');
 links[0].textContent = siteContent['nav']['nav-item-1'];
 links[1].textContent = siteContent['nav']['nav-item-2'];
@@ -48,6 +76,11 @@ links[2].textContent = siteContent['nav']['nav-item-3'];
 links[3].textContent = siteContent['nav']['nav-item-4'];
 links[4].textContent = siteContent['nav']['nav-item-5'];
 links[5].textContent = siteContent['nav']['nav-item-6'];
-
+links[0].style.color = 'green';
+links[1].style.color = 'green';
+links[2].style.color = 'green';
+links[3].style.color = 'green';
+links[4].style.color = 'green';
+links[5].style.color = 'green';
 
 
