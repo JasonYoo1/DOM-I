@@ -59,6 +59,10 @@ pContent[1].textContent = siteContent['main-content']['about-content']
 pContent[2].textContent = siteContent['main-content']['services-content']
 pContent[3].textContent = siteContent['main-content']['product-content']
 pContent[4].textContent = siteContent['main-content']['vision-content']
+pContent[5].textContent = siteContent['contact']['address']
+pContent[6].textContent = siteContent['contact']['phone']
+pContent[7].textContent = siteContent['contact']['email']
+pContent[8].textContent = siteContent['footer']['copyright']
 
 
 let headers = document.querySelectorAll('h4');
@@ -67,6 +71,7 @@ headers[1].textContent = siteContent['main-content']['about-h4'];
 headers[2].textContent = siteContent['main-content']['services-h4'];
 headers[3].textContent = siteContent['main-content']['product-h4'];
 headers[4].textContent = siteContent['main-content']['vision-h4']
+headers[5].textContent = siteContent['contact']['contact-h4']
 
 
 let links = document.querySelectorAll('a');
@@ -83,4 +88,13 @@ links[3].style.color = 'green';
 links[4].style.color = 'green';
 links[5].style.color = 'green';
 
+let newElement = document.createElement('a');
+newElement.textContent= 'Home';
+// nav.prepend(newElement);
+let newElementTwo = document.createElement('a')
+newElementTwo.textContent = 'Sign Up'
+
+const nav = document.querySelector('nav');
+nav.appendChild(newElement);
+nav.prepend(newElementTwo)
 
